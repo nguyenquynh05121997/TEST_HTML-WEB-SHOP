@@ -1,0 +1,75 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:rgb(245, 62, 45);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 16px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Itim', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gritd__full-width {
+    width: 100%;
+}
+
+.grit__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*  Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    left:0;
+    display: flex;
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+.madal__body {
+    width: 400px;
+    height: 400px;
+    background-color:var(--white-color);
+    margin: auto;
+    position:relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+
+
